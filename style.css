@@ -12,19 +12,20 @@ body {
 }
 
 main {
-  max-width: 880px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 120px 24px;
 }
 
+/* INTRO */
 .intro {
-  margin-bottom: 140px;
+  margin-bottom: 120px;
 }
 
 .intro h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.6px;
 }
 
 .tagline {
@@ -34,14 +35,66 @@ main {
   max-width: 640px;
 }
 
+/* BUTTONS */
+.actions {
+  margin-top: 36px;
+}
+
+.btn {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 12px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.primary {
+  background: #4da3ff;
+  color: #0b0d10;
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+}
+
+.secondary {
+  border: 1px solid #4da3ff;
+  color: #4da3ff;
+}
+
+.secondary:hover {
+  background: #4da3ff;
+  color: #0b0d10;
+}
+
+/* IMAGE SECTION */
+.image-section {
+  margin: 140px 0;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 14px;
+  opacity: 0.9;
+  transform: scale(0.97);
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+.image-section.visible img {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* CONTENT */
 .content {
   margin-bottom: 120px;
 }
 
 .content h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-bottom: 24px;
-  color: #ffffff;
 }
 
 .content p {
@@ -57,11 +110,9 @@ main {
 
 .content li {
   font-size: 1.05rem;
-  line-height: 1.7;
-  color: #c9ced6;
   margin-bottom: 12px;
-  position: relative;
   padding-left: 18px;
+  position: relative;
 }
 
 .content li::before {
@@ -72,15 +123,14 @@ main {
 }
 
 .contact p {
-  font-size: 1rem;
   color: #9aa4af;
 }
 
-/* ANIMATION */
+/* ANIMATIONS */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
 .reveal.visible {
