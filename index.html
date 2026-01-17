@@ -3,114 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Naveen Kumar — Cloud Engineer</title>
+  <title>Naveen Kumar | Cloud Engineer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<main>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- INTRO -->
-  <section class="intro reveal">
-    <h1>Naveen Kumar</h1>
-    <p class="tagline">
-      Cloud Engineer operating telecom-grade infrastructure and
-      reliability-critical systems.
-    </p>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-card">
+      <div class="icon">☁️</div>
+      <h1>Naveen Kumar</h1>
+      <p class="subtitle">
+        Cloud / DevOps Engineer working on production OpenStack & Linux systems
+      </p>
 
-    <div class="actions">
-      <a href="resume.pdf" download class="btn primary">Download Resume</a>
-      <a href="#contact" class="btn secondary">Contact</a>
+      <a href="resume.pdf" download class="btn">
+        Download Resume
+      </a>
     </div>
   </section>
 
-  <!-- IMAGE -->
-  <section class="image-section reveal">
-    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=80"
-         alt="Cloud Infrastructure">
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Core Skills</h2>
+
+    <div class="grid">
+      <div class="card">Linux Administration</div>
+      <div class="card">OpenStack (Nova, Neutron, Cinder)</div>
+      <div class="card">Cloud Operations</div>
+      <div class="card">Shell Scripting</div>
+      <div class="card">Networking Basics</div>
+      <div class="card">Monitoring & Troubleshooting</div>
+    </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="content reveal">
-    <h2>About</h2>
-    <p>
-      I am a Telco Cloud Engineer with hands-on experience operating
-      production OpenStack environments. My work focuses on Linux
-      troubleshooting, infrastructure reliability, and incident
-      resolution in systems where downtime is unacceptable.
-    </p>
-    <p>
-      I work close to the system — from OS internals to cloud services —
-      and enjoy understanding failures deeply and preventing them
-      systematically.
-    </p>
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>OpenStack Health Monitoring</h3>
+        <p>
+          Automated service health checks for Nova, Neutron and Cinder
+          to reduce downtime and manual effort.
+        </p>
+        <span class="tag">OpenStack</span>
+        <span class="tag">Linux</span>
+      </div>
+
+      <div class="card">
+        <h3>Incident Troubleshooting Playbook</h3>
+        <p>
+          Step-by-step troubleshooting guide for production cloud incidents.
+        </p>
+        <span class="tag">Production</span>
+        <span class="tag">SRE</span>
+      </div>
+    </div>
   </section>
 
-  <!-- WORK -->
-  <section class="content reveal">
-    <h2>What I Do</h2>
-    <ul>
-      <li>Operate and monitor OpenStack clusters</li>
-      <li>Manage VM, storage, and networking lifecycle</li>
-      <li>Troubleshoot Linux and cloud service issues</li>
-      <li>Handle incidents and root cause analysis</li>
-      <li>Collaborate with vendors and engineering teams</li>
-    </ul>
-  </section>
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
 
-  <!-- IMAGE -->
-  <section class="image-section reveal">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1400&q=80"
-         alt="Cloud Engineering">
-  </section>
-
-  <!-- ENGINEERING -->
-  <section class="content reveal">
-    <h2>Engineering Work</h2>
-    <p>
-      I have automated OpenStack cluster health checks to reduce manual
-      operations and improve early detection of failures. I regularly
-      troubleshoot VM connectivity and performance issues by analyzing
-      logs, services, and network paths.
-    </p>
-    <p>
-      My approach is methodical: observe, isolate the layer, verify
-      assumptions, and fix the root cause.
-    </p>
-  </section>
-
-  <!-- STACK -->
-  <section class="content reveal">
-    <h2>Technical Focus</h2>
-    <p>
-      Linux · OpenStack (Nova, Neutron, Cinder) · Networking fundamentals ·
-      Shell scripting · Monitoring · Incident management
-    </p>
+    <div class="card">
+      <h3>Cloud Administrator — HCLTech</h3>
+      <p class="muted">Proximus Project</p>
+      <p>
+        Managing IaaS cloud infrastructure using OpenStack.
+        Handling VM operations, incidents, monitoring and automation.
+      </p>
+    </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="content reveal contact" id="contact">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: github.com/yourprofile</p>
+
+    <div class="card center">
+      <p>Email: your@email.com</p>
+      <p>LinkedIn: linkedin.com/in/yourprofile</p>
+      <p>GitHub: github.com/naveenkumar</p>
+    </div>
   </section>
 
-</main>
-
-<script>
-  const reveals = document.querySelectorAll(".reveal");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-    });
-  }, { threshold: 0.15 });
-
-  reveals.forEach(r => observer.observe(r));
-</script>
+  <footer>
+    © 2026 Naveen Kumar
+  </footer>
 
 </body>
 </html>
