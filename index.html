@@ -9,98 +9,172 @@
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <a href="#home">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-card">
-      <div class="icon">☁️</div>
-      <h1>Naveen Kumar</h1>
-      <p class="subtitle">
-        Cloud / DevOps Engineer working on production OpenStack & Linux systems
-      </p>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-card">
+    <div class="icon">☁️</div>
+    <h1>Naveen Kumar N</h1>
 
-      <a href="resume.pdf" download class="btn">
-        Download Resume
-      </a>
-    </div>
-  </section>
+    <p class="subtitle">
+      Telco Cloud Administrator with 2+ years of experience operating
+      production OpenStack and AWS environments with zero-downtime focus.
+    </p>
 
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2>Core Skills</h2>
-
-    <div class="grid">
-      <div class="card">Linux Administration</div>
-      <div class="card">OpenStack (Nova, Neutron, Cinder)</div>
-      <div class="card">Cloud Operations</div>
-      <div class="card">Shell Scripting</div>
-      <div class="card">Networking Basics</div>
-      <div class="card">Monitoring & Troubleshooting</div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>OpenStack Health Monitoring</h3>
-        <p>
-          Automated service health checks for Nova, Neutron and Cinder
-          to reduce downtime and manual effort.
-        </p>
-        <span class="tag">OpenStack</span>
-        <span class="tag">Linux</span>
+    <!-- TERMINAL -->
+    <div class="terminal">
+      <div class="terminal-header">
+        <span></span><span></span><span></span>
       </div>
+      <div class="terminal-body">
+        <p><span class="prompt">$</span> whoami</p>
+        <p class="output">Telco Cloud Administrator</p>
 
-      <div class="card">
-        <h3>Incident Troubleshooting Playbook</h3>
-        <p>
-          Step-by-step troubleshooting guide for production cloud incidents.
-        </p>
-        <span class="tag">Production</span>
-        <span class="tag">SRE</span>
+        <p><span class="prompt">$</span> skills --core</p>
+        <p class="output">Linux · OpenStack · AWS · Cloud Operations</p>
+
+        <p><span class="prompt">$</span> uptime</p>
+        <p class="output">production-minded · reliability-focused</p>
       </div>
     </div>
-  </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <h2>Experience</h2>
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Telco Cloud Administrator — HCLTech</h3>
+    <p class="muted">Proximus Project | Sep 2023 – Present</p>
+
+    <ul class="elite-list">
+      <li>Led end-to-end migration of 2,000+ VMs with zero downtime across production and non-production environments.</li>
+      <li>Managed OpenStack resources including images, flavors, tenants, security groups, and volumes.</li>
+      <li>Troubleshot incidents using Linux and OpenStack CLI, resolving ServiceNow tickets within SLA.</li>
+      <li>Performed health checks, backups, restores, and scale-in/scale-out operations on OpenStack clusters.</li>
+      <li>Handled hardware faults, BIOS/DRAC updates, and Cisco/Broadcom ACI-related issues.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>AWS Cloud Intern — HCL Technologies</h3>
+    <p class="muted">Jun 2023 – Aug 2023</p>
+
+    <ul class="elite-list">
+      <li>Worked with AWS core services including EC2, VPC, IAM, and security best practices.</li>
+      <li>Gained hands-on exposure to cloud architecture and cost-optimized designs.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Cloud & Virtualization</h3>
+      <p>OpenStack (RHOSP), AWS, Azure (Basics)</p>
+    </div>
 
     <div class="card">
-      <h3>Cloud Administrator — HCLTech</h3>
-      <p class="muted">Proximus Project</p>
-      <p>
-        Managing IaaS cloud infrastructure using OpenStack.
-        Handling VM operations, incidents, monitoring and automation.
-      </p>
+      <h3>Operating Systems</h3>
+      <p>Linux (RHEL), Windows</p>
     </div>
-  </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <div class="card center">
-      <p>Email: your@email.com</p>
-      <p>LinkedIn: linkedin.com/in/yourprofile</p>
-      <p>GitHub: github.com/naveenkumar</p>
+    <div class="card">
+      <h3>Networking</h3>
+      <p>AVI Load Balancer, BGP, APIC, Static Port Binding</p>
     </div>
-  </section>
 
-  <footer>
-    © 2026 Naveen Kumar
-  </footer>
+    <div class="card">
+      <h3>Monitoring & Tools</h3>
+      <p>Panorama, AVI Controller, NetOps, iDRAC</p>
+    </div>
+
+    <div class="card">
+      <h3>ITSM & Automation</h3>
+      <p>ServiceNow, Git, Shell Scripting, MS Excel</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2>Certifications</h2>
+
+  <div class="grid badges">
+    <div class="badge-card">
+      <span class="badge-icon">☁️</span>
+      <div>
+        <h3>AWS Solutions Architect – Associate</h3>
+        <p class="muted">Amazon Web Services</p>
+      </div>
+    </div>
+
+    <div class="badge-card">
+      <span class="badge-icon">🔐</span>
+      <div>
+        <h3>Azure Administrator & Security Fundamentals</h3>
+        <p class="muted">Microsoft</p>
+      </div>
+    </div>
+
+    <div class="badge-card">
+      <span class="badge-icon">🧠</span>
+      <div>
+        <h3>Oracle Cloud & AI Foundations</h3>
+        <p class="muted">Oracle</p>
+      </div>
+    </div>
+
+    <div class="badge-card">
+      <span class="badge-icon">📘</span>
+      <div>
+        <h3>IITLQ & NPTEL Foundations</h3>
+        <p class="muted">PeopleCert / NPTEL</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>Bachelor of Engineering (ECE)</h3>
+    <p class="muted">K.L.N. College of Engineering | 2019 – 2023</p>
+    <p>CGPA: 8.82</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="card center">
+    <p>Email: naganavee2516@gmail.com</p>
+    <p>Mobile: +91-8015380210</p>
+    <p>LinkedIn: linkedin.com/in/naveen-kumar-n-168640280</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Naveen Kumar N
+</footer>
 
 </body>
 </html>
